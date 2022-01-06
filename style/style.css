@@ -1,0 +1,120 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+     background: linear-gradient(rgba(0,0,0,.50), rgba(0,0,0,.50) 100%), url('../imagens/galaxy-img.jpg');
+}
+
+/* Config do cabecalho*/
+header .container{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    align-items: center;
+    background-color: rgb(34, 31, 31);
+    height: 100px;
+    width: 100%;
+    margin-bottom: 10%;
+}
+
+header ul a{
+    text-decoration: none;
+    margin-right: 15px;
+    color: white;   
+
+}
+header ul a:hover{
+    font-size: 19px;
+    color: orange;
+}
+
+header ul .search{
+    height: 30px;
+    margin-left: 60px;
+    border-radius: 10px;
+}
+
+header ul .search:hover{
+    border: 2px solid orange;
+    color: orangered;
+    opacity: .6;
+}
+
+
+
+
+/*Config rodape*/
+.rodape{
+    width: 100%;
+    height: 100px;
+    background-color: rgb(34, 31, 31);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: left;
+    align-items: center;
+    margin-top: 10%;
+
+}
+.rodape .copy{
+    color: white;
+    font-size: 13px;
+    margin: 20px 0 0;
+}
+
+/*Config dos grids do game*/
+.main-game{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.genesis{
+    display: grid;
+    grid-template-areas: 'verde vermelho' 'amarelo azul';
+    grid-gap: 10px;
+    border: 1px solid black;
+    background-color: black;
+    border-radius: 100%;
+    margin-top: 20%;
+    margin-bottom: 20%;
+    width: 700px;
+    height: 700px;
+}
+
+.blue{
+    grid-area: azul;
+    background-color: blue;
+    border-bottom-right-radius: 100%;
+
+}
+
+.red{
+    grid-area: vermelho;
+    background-color: red;
+    border-top-right-radius: 100%;
+}
+
+.yellow{
+    grid-area: amarelo;
+    background-color: yellow;
+    border-bottom-left-radius: 100%;
+}
+
+.green{
+    grid-area: verde;
+    background-color: green;
+    border-top-left-radius: 100%;
+}
+
+/*Classe do css para diminuir a opacidade*/
+.selected{
+    opacity: .5;
+}
